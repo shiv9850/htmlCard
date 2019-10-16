@@ -1,0 +1,82 @@
+<style>
+  .row{
+  width : 50%;
+  margin:auto;
+}
+.card {
+  width : 150px;
+  height : 200px;
+  border : 1px solid;
+  border-radius : 10px;
+  padding : 0;
+  overflow:hidden;
+  background-color : #1abc9c;
+}
+
+.arrow-up {
+  
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  
+  border-bottom: 10px solid black;
+   position: absolute;
+  top : 40px;
+  margin-left : 40px;
+}
+
+.botton-circle{
+  position: absolute;
+  width :100px;
+  height : 50px;
+  top : 158px;
+  margin: 0 25px;
+  border : 1px solid;
+  border-top-left-radius : 50px;
+  border-top-right-radius : 50px;
+  background-color : #FFF;
+  transition : top 2s;
+}
+
+.botton-circle:hover {
+  top : 9px;
+  transition : top 2s;
+}
+
+.botton-circle:hover > span{
+  
+  border-top: 10px solid black;
+  border-bottom: 0;
+}
+
+.line {
+  border-bottom: 1px solid black;
+  position : absolute;
+  top : 210px;
+}
+
+.botton-circle:hover + .text{
+  top : 50px;
+  transition : top 2s;
+}
+
+.text{
+  border-top : 1px solid black;
+  top : 200px;
+  position: relative;
+  margin-bottom : 0;
+  background-color : #FFF;
+  transition : top 2s;
+}
+</style>
+<div class="row">
+<div class="card">
+  <div class="botton-circle">
+    <span class="arrow-up">         </span>
+  </div> 
+  <div class="text">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+  </div>
+</div>
+</div>
